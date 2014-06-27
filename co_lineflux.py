@@ -33,6 +33,7 @@ def Intensity_12CO(NCo,nH2,T_kin,del_v):
     
     # Run Radex code, get table of parameters
     R = pyradex.Radex(species='/Users/ksgreen/Radex/data/co', collider_densities={'ph2':ph2_dens,'oh2':oh2_dens}, 
+    R = pyradex.Radex(species='co', collider_densities={'ph2':ph2_dens,'oh2':oh2_dens}, 
                       column=column, abundance=abundance, tbackground=tbackground, deltav=del_v, 
                       temperature=temperature)
     
